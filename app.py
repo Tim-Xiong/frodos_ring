@@ -1,5 +1,8 @@
 import streamlit as st
 from model import FrodoBot
+from huggingface_hub import login
+
+login(st.secrets["HF_TOKEN"])
 
 frodo_image = "frodo.jpg"
 
